@@ -2,13 +2,14 @@ import os
 import io
 
 # Import libraries
+import os
 from pydub import AudioSegment
 from google.cloud import speech_v1
 from google.cloud.speech_v1 import enums
 from google.cloud.speech_v1 import types
 import wave
 from google.cloud import storage
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/Users/jackroseman/Desktop/DEV/Bantre/SnippetService/GCP/Bantre-78cdce3b5ad5.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=""
 filepath = "/Users/jackroseman/Desktop/DEV/Bantre/Data/"     #Input audio file path
 # output_filepath = "/Users/jackroseman/Desktop/DEV/Bantre/" #Final transcript path
 bucketname = "bantre_podcast_data" #Name of the bucket created in the step before
